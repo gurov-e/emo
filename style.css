@@ -90,7 +90,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* min-height: 70px; max-height: 100px; */
 
   color: var(--light);
   cursor: pointer;
