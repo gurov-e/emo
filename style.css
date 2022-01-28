@@ -119,7 +119,16 @@ body {
   border-radius: 0.3vw;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 768px) {
+  .alert {
+    min-width: 15vw; max-width: 25vw;
+    min-height: 4vh; max-height: 15vh;
+
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 1920px) {
 	.text__input {
 		font-size: 16px;
 		display: block;
@@ -132,9 +141,13 @@ body {
 	}
 }
 
-@media screen and (min-width: 3840px) {
+@media screen and (min-width: 3400px) {
+  .text__input {
+    margin-bottom: 40px;
+  }
+
 	.btn {
-		padding: 10px 20px;
+		padding: 10px 30px;
 	}
 
 	.text {
