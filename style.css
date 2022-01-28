@@ -1,0 +1,143 @@
+:root {
+  --dark: rgb(20, 20, 30);
+  --light: rgb(247, 255, 177);
+  --lighter: rgba(247, 255, 177, 0.6);
+  --gray: rgba(247, 255, 177, 0.2);
+}
+
+::-webkit-input-placeholder {
+  color: var(--lighter);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(90deg, #ff00ae, #b115e0, var(--dark));
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form {
+  width: inherit;
+  height: inherit;
+}
+
+.form__panel {
+  padding: 1.5vw;
+  min-width: 350px; max-width: 1200px;
+  max-height: 100%;
+  box-shadow: 0 0 20px var(--light);
+  border: 1px solid var(--light);
+}
+
+.input {
+  padding: 10px 5px;
+	margin-bottom: 20px;
+
+  background: transparent;
+  color: var(--light);
+  border: 1px dashed var(--gray);
+  border-bottom: 1px solid var(--light);
+
+  font-size: inherit;
+}
+
+.text__input {
+  min-width: 35%; max-width: 60%;
+  min-height: 3vh; max-height: 20vh;
+  font-size: calc(0.7vw);
+}
+
+.input:focus {
+  outline: var(--light) dashed 1px;
+}
+
+.btn {
+  min-width: 120px; max-width: 400px;
+  min-height: 3vh; max-height: 20vh;
+	margin-left: 20px;
+  
+  color: var(--light);
+  border: 1px solid var(--light);
+  font-size: calc(0.7vw);
+  cursor: pointer;
+}
+
+.btn[disabled] {
+  background: var(--gray);
+  color: var(--gray);
+  border: 1px dashed var(--gray);
+  cursor: not-allowed;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 70px; max-height: 100px; */
+
+  color: var(--light);
+  cursor: pointer;
+	font-size: inherit / 2;
+}
+
+.alert {
+  bottom: 0.5vw;
+  right: 0.5vw;
+  padding: 0.4em 0.6em;
+
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8vw; max-width: 13vw;
+  min-height: 3vh; max-height: 8vh;
+  
+  /* box-shadow: 0 0 50px var(--light); */
+
+  font-family: inherit;
+  font-size: 1.5vw;
+
+  background: var(--light);
+  border: 1px dashed var(--light);
+  border-radius: 0.3vw;
+}
+
+@media screen and (max-width: 1919px) {
+	.text__input {
+		font-size: 16px;
+		display: block;
+		margin: 10px auto;
+	}
+	
+	.btn {
+		font-size: 20px;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (min-width: 3840px) {
+	.btn {
+		padding: 10px 20px;
+	}
+
+	.text {
+		font-size: 1vw
+	}
+}
