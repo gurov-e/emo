@@ -33,7 +33,6 @@ function randomEmoji() {
 function clear() {
     input.select()
     input.value = ''
-    input.focus()
 }
 
 window.addEventListener('keydown', (event) => {
