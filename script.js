@@ -1,6 +1,6 @@
 const input = document.querySelector('.input')
-const text = document.querySelector('.text')
-const btn = document.querySelector('.btn')
+const text  = document.querySelector('.text')
+const btn   = document.querySelector('.btn')
 
 function convert() {
     return input.value.split('').map((c, i) =>
