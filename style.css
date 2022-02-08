@@ -17,9 +17,10 @@
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; height: 100vh;
+
   background: -webkit-linear-gradient(90deg, #ff00ae, #b115e0, var(--dark));
+  
   font-family: sans-serif;
 }
 
@@ -29,16 +30,15 @@ body {
   justify-content: center;
   flex-flow: column wrap;
 
-  text-align: center;
   font-size: 1.5rem;
 }
-
 .form {
-  width: inherit;
-  height: inherit;
+  width: inherit; height: inherit;
+
+  text-align: center;
 }
 
-.form__panel {
+.panel {
   padding: 1.5vw;
   min-width: 350px; max-width: 1200px;
   max-height: 100%;
@@ -107,8 +107,6 @@ body {
   justify-content: center;
   min-width: 8vw; max-width: 13vw;
   min-height: 3vh; max-height: 8vh;
-  
-  /* box-shadow: 0 0 50px var(--light); */
 
   font-family: inherit;
   font-size: 1.5vw;
