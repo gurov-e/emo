@@ -2,7 +2,7 @@ const input = document.querySelector('.input')
 const text  = document.querySelector('.text')
 const btn   = document.querySelector('.btn')
 
-function convert() {
+function convertToEmo() {
     return input.value.split('').map((c, i) =>
         i % 2 ? c.toLowerCase() : c.toUpperCase()).join('')
 }
