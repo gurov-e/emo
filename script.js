@@ -37,7 +37,7 @@ function clear() {
 
 window.addEventListener('keydown', (event) => {
     if (event.code === 'Enter' && input.value) {
-        text.innerHTML = convert() + randomEmoji()
+        text.innerHTML = convertToEmo() + randomEmoji()
         copyToClipboard()
         showAlert()
         clear()
@@ -46,7 +46,7 @@ window.addEventListener('keydown', (event) => {
 
 btn.addEventListener('click', () => {
     if (input.value) {
-        text.innerHTML = convert() + randomEmoji()
+        text.innerHTML = convertToEmo() + randomEmoji()
         clear()
     }
 })
