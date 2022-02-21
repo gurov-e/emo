@@ -151,8 +151,29 @@ body {
 
 @media screen and (max-width: 768px) {
   .alert {
+    right: 1.5vw;
+    bottom: 1.5vw;
+
     min-width: 15vw; max-width: 25vw;
-    min-height: 4vh; max-height: 15vh;
+    min-height: 3.5vh; max-height: 15vh;
+
+    font-size: 3vw;
+    border-radius: 0.3em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .panel {
+    padding: 1.5vw;
+    min-width: 300px;
+  }
+
+  .alert {
+    right: 1vw;
+    bottom: 1vw;
+
+    min-width: 15vw; max-width: 25vw;
+    min-height: 3vh; max-height: 15vh;
 
     font-size: 3vw;
     border-radius: 0.3em;
@@ -162,10 +183,7 @@ body {
 @media screen and (max-width: 320px) {
   .panel {
     padding: 1.5vw;
-    min-width: 300px; max-width: 1200px;
-    max-height: 100%;
-    box-shadow: 0 0 20px var(--light);
-    border: 1px solid var(--light);
+    min-width: 300px;
   }
 
   .alert {
