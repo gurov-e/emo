@@ -114,13 +114,13 @@ body {
   font-size: 1.5vw;
 
   background: var(--light);
-  border: 1px dashed var(--light);
   border-radius: 0.3em;
 }
 
-@media screen and (min-width: 3400px) {
+@media screen and (min-width: 2560px) {
   .text__input {
     margin-bottom: 40px;
+    font-size: 1vw;
   }
 
 	.btn {
@@ -155,14 +155,14 @@ body {
     bottom: 1.5vw;
 
     min-width: 15vw; max-width: 25vw;
-    min-height: 3.5vh; max-height: 15vh;
+    min-height: 3.5vh;
 
     font-size: 3vw;
     border-radius: 0.3em;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   .panel {
     padding: 1.5vw;
     min-width: 300px;
@@ -172,28 +172,15 @@ body {
     right: 1vw;
     bottom: 1vw;
 
-    min-width: 15vw; max-width: 25vw;
-    min-height: 3vh; max-height: 15vh;
-
-    font-size: 3vw;
-    border-radius: 0.3em;
+    min-width: 15vw;
+    min-height: 3vh;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .panel {
-    padding: 1.5vw;
-    min-width: 300px;
-  }
+@media screen and (max-width: 325px) {
 
   .alert {
-    right: 1vw;
-    bottom: 1vw;
-
-    min-width: 15vw; max-width: 25vw;
-    min-height: 3vh; max-height: 15vh;
-
-    font-size: 3vw;
-    border-radius: 0.3em;
+    min-width: 15vw;
+    min-height: 3vh;
   }
 }

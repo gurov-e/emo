@@ -33,6 +33,11 @@ function randomEmoji() {
 function clear() {
     input.select()
     input.value = ''
+    if (window.innerWidth >= 768) {
+        input.focus()
+        return
+    }
+    input.blur()
 }
 
 window.addEventListener('keydown', (event) => {
@@ -47,6 +52,10 @@ window.addEventListener('keydown', (event) => {
 btn.addEventListener('click', () => {
     if (input.value) {
         text.innerHTML = convertToEmo() + randomEmoji()
+            if (window.innerWidth >= 768) {
+            copyToClipboard()
+            showAlert()
+        }
         clear()
     }
 })
