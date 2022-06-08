@@ -1,6 +1,8 @@
 const input = document.querySelector('.input')
 const text  = document.querySelector('.text')
 const btn   = document.querySelector('.btn')
+let min = 0
+let max = 1
 
 function convertToEmo() {
     return input.value.split('').map((c, i) =>
@@ -12,13 +14,19 @@ function copyToClipboard() {
 }
 
 function showAlert() {
+  if (min < max) {
+    min = max
     const alert = document.createElement('div')
 
     document.body.appendChild(alert)
     alert.classList.add('alert')
     alert.insertAdjacentHTML('afterbegin', '<p>Скопировано!</p>')
 
-    setTimeout(() => alert.remove(), 3000)
+    setTimeout(() => {
+      alert.remove()
+      min = 0
+    }, 3000)
+  }
 }
 
 function randomEmoji() {
