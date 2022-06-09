@@ -1,6 +1,7 @@
 const input = document.querySelector('.input')
 const text  = document.querySelector('.text')
 const btn   = document.querySelector('.btn')
+const emojis = ['^_^', ':3', '<3', 'T_T', ':*', ":'("]
 let min = 0
 let max = 1
 
@@ -31,7 +32,6 @@ function showAlert() {
 
 function randomEmoji() {
     if (input.value !== text.textContent) {
-        const emojis = ['^_^', ':3', '<3', 'T_T', ':*', ":'("]
         return emojis[Math.floor(Math.random() * emojis.length)]
     } else {
         return ''
