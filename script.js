@@ -6,7 +6,7 @@ let min = 0
 let max = 1
 
 function convertToEmo() {
-    return input.value.split('').map((c, i) =>
+    return input.value.replaceAll('мне ', 'мну ').split('').map((c, i) =>
         i % 2 ? c.toLowerCase() : c.toUpperCase()).join('')
 }
 
