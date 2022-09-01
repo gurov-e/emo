@@ -60,10 +60,8 @@ window.addEventListener('keydown', (event) => {
 btn.addEventListener('click', () => {
   if (input.value) {
     text.innerHTML = convertToEmo() + randomEmoji()
-    if (window.innerWidth >= 375) {
-      copyToClipboard()
-      showAlert()
-    }
+    copyToClipboard()
+    showAlert()
     clear()
   }
 })
@@ -76,6 +74,5 @@ text.addEventListener('click', () => {
 input.addEventListener('input', () => {
   if (input.value.length <= 90) {
     input.value.slice(0, 90)
-    counter.textContent = input.value.split('').length
   }
 })
